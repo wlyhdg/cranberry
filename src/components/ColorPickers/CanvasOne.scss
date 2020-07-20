@@ -1,0 +1,44 @@
+.canvas__one > * {
+    display: block;
+    margin: 15px auto;
+}
+
+.canvas__one {
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    transform: translate(50%, 50%) skewY(7deg);
+}
+
+.color__detail {
+    position: relative;
+}
+
+.dropdown {
+    float: right;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    border: 1px solid #333;
+    width: 200px;
+    margin: 0 auto;
+    &:hover {
+        background: aliceblue;
+        cursor: pointer;
+    }
+    &:first-child {
+        border-top-left-radius: 5px;
+    }
+    &:last-child {
+        border-bottom-right-radius: 5px;
+    }
+}
