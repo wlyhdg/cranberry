@@ -2,11 +2,11 @@ import React, { useState, useRef, useEffect } from 'react'
 
 const BaseInput = () => {
     const [inp, setInp] = useState(null);
-    const testRef = useRef(null);
+    const inpRef = useRef(null);
 
-    const foobar = () => {
+    const inquire = () => {
         console.log('hi')
-        setInp(testRef.current.value)
+        setInp(inpRef.current.value)
     }
 
     useEffect(() => {
@@ -15,8 +15,8 @@ const BaseInput = () => {
 
     return (
         <div style = {{margin: '200px'}}>
-            <input ref={testRef}></input>
-            <button onClick={foobar}>I do what I want</button>
+            <input ref={inpRef}></input>
+            <button onClick={inquire}>I do what I want</button>
             <p>{inp}</p>
         </div>
     )
